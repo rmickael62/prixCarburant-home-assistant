@@ -138,7 +138,7 @@ class PrixCarburant(Entity):
             ATTR_GPL_LAST_UPDATE: self.station.gpl['maj'],
             ATTR_ADDRESS: self.station.adress,
             ATTR_NAME: self.station.name,
-            ATTR_LAST_UPDATE: self.client.lastUpdate.strftime('%Y-%m-%d')
+            ATTR_LAST_UPDATE: self.client.lastUpdate
         }
         return attrs
 
@@ -149,7 +149,7 @@ class PrixCarburant(Entity):
         """
 
         self.client.reloadIfNecessary()
-        if self.client.lastUpdate == self.lastUpdate:
+        if self.client.lastUpdate < self.lastUpdate + timedelta(hours=1):
             logging.debug("[UPDATE]["+self.station.id+"] valeur a jour") 
         else:
             logging.debug("[UPDATE]["+self.station.id+"] valeur pas a jour")
