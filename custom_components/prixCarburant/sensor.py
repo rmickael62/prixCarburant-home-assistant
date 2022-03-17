@@ -149,7 +149,7 @@ class PrixCarburant(Entity):
         """
 
         self.client.reloadIfNecessary()
-        if self.lastUpdate + timedelta(hours=1) < self.client.lastUpdate:
+        if self.client.lastUpdate < self.lastUpdate + timedelta(hours=1):
             logging.debug("[UPDATE]["+self.station.id+"] valeur a jour") 
         else:
             logging.debug("[UPDATE]["+self.station.id+"] valeur pas a jour")
