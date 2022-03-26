@@ -8,22 +8,22 @@ from homeassistant.components.sensor import PLATFORM_SCHEMA
 from homeassistant.const import CONF_ELEVATION, CONF_LATITUDE, CONF_LONGITUDE
 from homeassistant.helpers.entity import Entity
 
-ATTR_ID = "Station ID"
+ATTR_ID = "Station_ID"
 ATTR_GASOIL = 'Gasoil'
 ATTR_E95 = 'E95'
 ATTR_E98 = 'E98'
 ATTR_E10 = 'E10'
 ATTR_GPL = 'GPLc'
 ATTR_E85 = 'E85'
-ATTR_GASOIL_LAST_UPDATE = 'Last Update Gasoil'
-ATTR_E95_LAST_UPDATE= 'Last Update E95'
-ATTR_E98_LAST_UPDATE = 'Last Update E98'
-ATTR_E10_LAST_UPDATE = 'Last Update E10'
-ATTR_GPL_LAST_UPDATE = 'Last Update GPLc'
-ATTR_E85_LAST_UPDATE = 'Last Update E85'
-ATTR_ADDRESS = "Station Address"
-ATTR_NAME = "Station name"
-ATTR_LAST_UPDATE = "Last update"
+ATTR_GASOIL_LAST_UPDATE = 'Last_Update_Gasoil'
+ATTR_E95_LAST_UPDATE= 'Last_Update_E95'
+ATTR_E98_LAST_UPDATE = 'Last_Update_E98'
+ATTR_E10_LAST_UPDATE = 'Last_Update_E10'
+ATTR_GPL_LAST_UPDATE = 'Last_Update_GPLc'
+ATTR_E85_LAST_UPDATE = 'Last_Update_E85'
+ATTR_ADDRESS = "Station_Address"
+ATTR_NAME = "Station_name"
+ATTR_LAST_UPDATE = "Last_update"
 
 CONF_MAX_KM = 'maxDistance'
 CONF_STATION_ID = 'stationID'
